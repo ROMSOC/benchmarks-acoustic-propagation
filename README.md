@@ -1,4 +1,5 @@
 # Coupled models for acoustic propagation through multilayer systems for particle-velocity sensors
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171815.svg)](https://doi.org/10.5281/zenodo.5171815)
 
 The repository contains scripts for generating the relevant meshes and computing the 
 scattering of a plane wave by the Microflown PU Regular Probe. The probe may include 
