@@ -13,16 +13,16 @@ The motivation and technical details of the source code are highlighted in the t
 presented at a minisymposium at the World Congress in Computational Mechanics (Jan 2021).
 
 <p align="center">
-  <a href="resources/202101_WCCM2020.pdf"> <img width="276" height="180" src="resources/wccm2020_banner.png" border="1"> </a> <br \>
+  <a href="resources/202101_WCCM2020.pdf"> <img width="276" height="180" src="resources/wccm2020_banner.png" border="1"> </a>
   <i> <small> (Click image to view presentation) </small> </i>
 </p>
 
-<hr style="border:1px"> </hr>
+<hr style="border:1px"> 
 
 ### DESCRIPTION
 
 <p align="center">
-  <img  src="resources/workflow.png"> <br \>
+  <img  src="resources/workflow.png"> 
   <i> Software tools workflow </i>
 </p>
 
@@ -55,7 +55,7 @@ gzip sphere.xml
 
 Some additional instructions are included as README in the specific folders.
 
-<hr style="border:1px"> </hr>
+<hr style="border:1px">
 
 ### DISCLAIMER
 
@@ -64,7 +64,7 @@ In downloading this SOFTWARE you are deemed to have read and agreed to the follo
 This SOFTWARE has been designed with an exclusive focus on civil applications. It is not to be used
 for any illegal, deceptive, misleading or unethical purpose or in any military applications. This includes ANY APPLICATION WHERE THE USE OF THE SOFTWARE MAY RESULT IN DEATH, PERSONAL INJURY OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE. Any redistribution of the software must retain this disclaimer. BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO THE TERMS ABOVE. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT INSTALL OR USE THE SOFTWARE
 
-<hr style="border:1px" > </hr>
+<hr style="border:1px" > 
 
 ### ACKNOWLEDGEMENTS
 
@@ -72,4 +72,4 @@ for any illegal, deceptive, misleading or unethical purpose or in any military a
 
 The ROMSOC project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie Grant Agreement No. 765374. This repository reflects the views of the author(s) and does not necessarily reflect the views or policy of the European Commission. The REA cannot be held responsible for any use that may be made of the information this repository contains.
 
-<hr style="border:1px"> </hr>
+<hr style="border:1px"> 
