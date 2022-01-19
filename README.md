@@ -1,3 +1,6 @@
+
+<img src="resources/romsoclogo-logo.png" alt="EU Flag"  width="150"/>
+
 # Coupled models for acoustic propagation through multilayer systems for particle-velocity sensors
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171815.svg)](https://doi.org/10.5281/zenodo.5171815)
 
