@@ -333,17 +333,18 @@ print("          tetrahedrons: ", DomainMesh.NbTetras())
 #
 # Export Mesh as UNV file
 try:
-    DomainMesh.ExportUNV(path
-                         + '/results/sphere_porous'
-                         + str(mesh_param_sph)
-                         + str(mesh_param_por)
-                         + str(mesh_param_max)
-                         + '.unv' )
+    #DomainMesh.ExportUNV(path
+    #                     + '/results/sphere_porous'
+    #                     + str(mesh_param_sph)
+    #                     + str(mesh_param_por)
+    #                     + str(mesh_param_max)
+    #                     + '.unv' )
+    DomainMesh.ExportUNV('sphere_porous.unv')
     #DomainMesh.ExportMED(path + '/results/sphere_refined' + str(mesh_param_max) + '.med')
     pass
 except:
-    print('ExportUNV() failed. Invalid path specified :', path + '/unv/sphere_porous' + str(mesh_param_max) +'.unv')
-
+    #print('ExportUNV() failed. Invalid path specified :', path + '/unv/sphere_porous' + str(mesh_param_max) +'.unv')
+    print('ExportUNV() failed. Invalid path specified :', 'sphere_porous.unv')
 
 ## Set names of Mesh objects
 smesh.SetName(NETGEN_1D_2D_3D.GetAlgorithm(), 'NETGEN 1D-2D-3D')
