@@ -70,6 +70,8 @@ docker run -u 0 -it --rm -p 8888:8888 benchmarks-thermomechanical-model jupyter-
 Alternatively, user-friendly Jupyter Notebooks could be used to run different benchmarks on the cloud. For instance, the benchmark related to the porous sphere scattering problem is available at:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/mechanical_model/benchmark_mechanical.ipynb)
 
+<hr style="border:1px"> 
+
 ### DISCLAIMER
 
 In downloading this SOFTWARE you are deemed to have read and agreed to the following terms:
