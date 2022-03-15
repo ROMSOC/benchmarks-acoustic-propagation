@@ -1,8 +1,5 @@
 /* ------------------------------------------------------------------*\
-                        ╦═╗╔═╗╔╦╗╔═╗╔═╗╔═╗
-                        ╠╦╝║ ║║║║╚═╗║ ║║  
-                        ╩╚═╚═╝╩ ╩╚═╝╚═╝╚═╝
- Reduced Order Modelling, Simulation, Optimization of Coupled Systems 
+Reduced Order Modelling, Simulation, Optimization of Coupled Systems 
                             2017-2021
 
  Authors : 
@@ -23,7 +20,7 @@
  Acknowledgements:
  The ROMSOC project has received funding from the European Union’s 
  Horizon 2020 research and innovation programme under the Marie 
- Skłodowska-Curie Grant Agreement No. 765374.
+ Sklodowska-Curie Grant Agreement No. 765374.
 \*-------------------------------------------------------------------*/
 
 #include <pybind11/pybind11.h>
