@@ -67,7 +67,7 @@ docker run -u 0 -it --rm -p 8888:8888 benchmarks-thermomechanical-model jupyter-
 ```
 
 Alternatively, user-friendly Jupyter Notebooks could be used to run different benchmarks on the cloud. For instance, the benchmark related to the porous sphere scattering problem is available at:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/02_scattering_sphere/radialwave_scattering_porous_coupling/scattering_sphere_porous.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/02_scattering_sphere/radialwave_scattering_porous_coupling/scattering_sphere_porous.ipynb). Please, notice that cloud computing are limited to 2GB of RAM memory and the current setting benchamark with the mesh included in this repository requires around 8GB.
 
 <hr style="border:1px"> 
 
