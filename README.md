@@ -57,6 +57,19 @@ Some additional instructions are included as README in the specific folders.
 
 <hr style="border:1px">
 
+### RUN JUPYTER NOTEBOOKS
+The entire benchmark repository can be executed in a provided Docker container where a full installation of Salome, FEconv, FEniCS, and PyVista is available. Once you have clone or downloaded this repository, to build the container just type
+```bash
+docker build -t benchmarks-acoustic-propagation . 
+```
+and for running it locally:
+```bash
+docker run -u 0 -it --rm -p 8888:8888 benchmarks-thermomechanical-model jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root
+```
+
+Alternatively, user-friendly Jupyter Notebooks could be used to run different benchmarks on the cloud. For instance, the benchmark related to the porous sphere scattering problem is available at:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/mechanical_model/benchmark_mechanical.ipynb)
+
 ### DISCLAIMER
 
 In downloading this SOFTWARE you are deemed to have read and agreed to the following terms:
