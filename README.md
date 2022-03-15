@@ -27,31 +27,30 @@ presented at a minisymposium at the World Congress in Computational Mechanics (J
 </p>
 
 - To generate a mesh, you'd need [SALOME](https://www.salome-platform.org/). 
-  The scripts were verified to run with SALOME v8.4.0, v9.2.1 and v9.4.0.
-- Run e.g., `source/00_meshes/sphere.py` in command line (without firing up the GUI) as,
+  The scripts were verified to run with SALOME v8.4.0, v9.2.1, v9.4.0, and v9.8.0.
+- Run e.g., `source/00_meshes/sphere_porous_PML.py` in command line (without firing up the GUI) as,
 
 ```bash
-/path/to/executable/salome --terminal sphere.py
+/path/to/executable/salome -t python3 sphere.py
 ```
 
 - Convert the `.unv` mesh files from SALOME to `.xml.gz` with [`FEConv`](http://victorsndvg.github.io/FEconv/) and `dolfin-convert`(available with FEniCS) utilites. (Alternatively, [`meshio-convert`](https://github.com/nschloe/meshio) may also serve, although it may have some compatibility issues with FEniCS) 
 
 ```bash
 # FEconv 
-feconv -gm sphere.unv sphere.msh          # converts to Gmsh format
-dolfin-convert sphere.msh sphere.xml      # Gmsh to FEniCS xml
+feconv -gm sphere_porous_PML.unv sphere_porous_PML.msh          # converts to Gmsh format
+dolfin-convert sphere_porous_PML.msh sphere_porous_PML.xml      # Gmsh to FEniCS xml
 
 # OR with meshio (some known issues)
-meshio-convert sphere.unv sphere.xml 
+meshio-convert sphere_porous_PML.unv sphere_porous_PML.xml 
 
 # Compress XML
-gzip sphere.xml
+gzip sphere_porous_PML.xml
 ```
 
 - Verify parameters of the problem configuration in the script files to run.
-- To run the program, run the respective script (`.py`) in the FEniCS v2019.1.0 docker container.
+- To run the program, run the respective script (`.py`) in the FEniCS v2019.2.0.dev0 docker container (see details below).
 - The result files can be visualized easily with ParaView >v5.6.
-
 
 Some additional instructions are included as README in the specific folders.
 
@@ -68,7 +67,7 @@ docker run -u 0 -it --rm -p 8888:8888 benchmarks-thermomechanical-model jupyter-
 ```
 
 Alternatively, user-friendly Jupyter Notebooks could be used to run different benchmarks on the cloud. For instance, the benchmark related to the porous sphere scattering problem is available at:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/mechanical_model/benchmark_mechanical.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/02_scattering_sphere/radialwave_scattering_porous_coupling/scattering_sphere_porous.ipynb)
 
 <hr style="border:1px"> 
 
