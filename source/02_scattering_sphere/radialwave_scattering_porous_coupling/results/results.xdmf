@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="TimeSeries" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="351221" TopologyType="Tetrahedron" NodesPerElement="4">
+          <DataItem Dimensions="351221 4" NumberType="UInt" Format="HDF">results.h5:/Mesh/0/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XYZ">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/Mesh/0/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="0" />
+        <Attribute Name="Re(u_sc)" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/VisualisationVector/0</DataItem>
+        </Attribute>
+        <Attribute Name="Im(u_sc)" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/VisualisationVector/1</DataItem>
+        </Attribute>
+        <Attribute Name="Re(u_ex)" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/VisualisationVector/2</DataItem>
+        </Attribute>
+        <Attribute Name="Im(u_ex)" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/VisualisationVector/3</DataItem>
+        </Attribute>
+        <Attribute Name="Error_Re(u)" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/VisualisationVector/4</DataItem>
+        </Attribute>
+        <Attribute Name="Error_Im(u)" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="60408 3" Format="HDF">results.h5:/VisualisationVector/5</DataItem>
+        </Attribute>
+        <Attribute Name="p_sc_re" AttributeType="Scalar" Center="Cell">
+          <DataItem Dimensions="351221 1" Format="HDF">results.h5:/VisualisationVector/6</DataItem>
+        </Attribute>
+        <Attribute Name="p_sc_im" AttributeType="Scalar" Center="Cell">
+          <DataItem Dimensions="351221 1" Format="HDF">results.h5:/VisualisationVector/7</DataItem>
+        </Attribute>
+        <Attribute Name="p_sc_re_CG1" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="60408 1" Format="HDF">results.h5:/VisualisationVector/8</DataItem>
+        </Attribute>
+        <Attribute Name="p_sc_im_CG1" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="60408 1" Format="HDF">results.h5:/VisualisationVector/9</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>

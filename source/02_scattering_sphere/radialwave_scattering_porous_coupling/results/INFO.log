@@ -1,1 +1,18 @@
+MESH INFO:
+Mesh Name = ../../00_meshes/sphere_porous.xml.gz
+Number of vertices in mesh = 60408
+h_min = 0.003217628799672112
+h_max = 0.21439461773009552
 
+PHYSICAL PARAMETERS : 
+Lx = 0.2
+Ly = 0.2
+Lz = 0.2
+Lpml = 0.2
+
+FLUID PARAMETERS:
+c = 343.0
+rho = 1.213
+
+PROBLEM CONFIG:
+Freqs = [100]
