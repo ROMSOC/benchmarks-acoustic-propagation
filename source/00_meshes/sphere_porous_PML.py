@@ -226,8 +226,6 @@ Domain = geompy.MakePartition(Domainlist)
 # Extract Relevant subshapes for making conformal meshes
 FluidLayer1 = geompy.SubShapeSortedCentres(Domain, geompy.ShapeType["SOLID"], [15])
 PorousLayer = geompy.SubShapeSortedCentres(Domain, geompy.ShapeType["SOLID"], [14])
-SphereFace = geompy.SubShapeSortedCentres(FluidLayer1, geompy.ShapeType["FACE"], [1])
-#print(SphereID)
 
 # Add to Study (for viewing)
 #Verts
@@ -288,7 +286,6 @@ geompy.addToStudy( porous_layer, 'Porous Domain' )
 geompy.addToStudy( Domain, 'Domain' )
 geompy.addToStudyInFather( Domain, FluidLayer1, 'FluidLayer1' )
 geompy.addToStudyInFather( Domain, PorousLayer, 'PorousLayer' )
-geompy.addToStudyInFather( FluidLayer1, SphereFace, 'SphereFace' )
 
 ###
 ### SMESH component
@@ -305,7 +302,7 @@ NETGEN_3D_Parameters_1 = NETGEN_1D_2D_3D.Parameters()
 
 NETGEN_3D_Parameters_1.SetMaxSize(lpml/mesh_param_max)
 NETGEN_3D_Parameters_1.SetMinSize(radius/mesh_param_sph)
-NETGEN_3D_Parameters_1.SetLocalSizeOnShape(SphereFace, radius/mesh_param_sph)
+NETGEN_3D_Parameters_1.SetLocalSizeOnShape(FluidLayer1, radius/mesh_param_sph)
 NETGEN_3D_Parameters_1.SetLocalSizeOnShape(PorousLayer, (r_max-r_min)/mesh_param_por)
 
 
