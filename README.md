@@ -2,7 +2,7 @@
 <img src="resources/romsoclogo-logo.png" alt="EU Flag"  width="150"/>
 
 # Coupled models for acoustic propagation through multilayer systems for particle-velocity sensors
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171815.svg)](https://doi.org/10.5281/zenodo.5171815)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171815.svg)](https://doi.org/10.5281/zenodo.5171815) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-acoustic-propagation/HEAD?labpath=source/02_scattering_sphere/radialwave_scattering_porous_coupling/scattering_sphere_porous.ipynb)
 
 The repository contains scripts for generating the relevant meshes and computing the 
 scattering of a plane wave by the Microflown PU Regular Probe. The probe may include 
